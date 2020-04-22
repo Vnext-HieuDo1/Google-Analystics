@@ -50,7 +50,7 @@ function getReport($analytics) {
   // Create the Metrics object.
   $sessions = new Google_Service_AnalyticsReporting_Metric();
   $sessions->setExpression("ga:pageViews");
-  $sessions->setAlias("pageViews");
+  $sessions->setAlias("Total views: ");
   
   $dimensionFilter = new Google_Service_AnalyticsReporting_DimensionFilter();
 $dimensionFilter->setDimensionName('ga:pagePath');
